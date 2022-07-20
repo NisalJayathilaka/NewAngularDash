@@ -1,0 +1,16 @@
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col" *ngFor="let sale of sales">
+        <div class="card bg-light mb-3 text-center" style="max-width: 18rem" >
+          <div class="card-header">{{header1Title}}</div>
+          <div class="card-body">
+            <h2 class="card-text">
+              {{sale.totalsales}}
+            </h2>
+          </div>
+        </div>
+      </th>
+    </tr>
+  </thead>
+</table>

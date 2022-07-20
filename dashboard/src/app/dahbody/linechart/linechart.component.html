@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col" >
+        <ejs-chart
+          [primaryXAxis]="xAxis"
+          [primaryYAxis]="yAxis"
+          [title]="chartTitle"
+          [legendSettings]="legend"
+          [tooltip]="toolTipSetting"
+        >
+          <e-series-collection>
+            <e-series
+              type="Line"
+              [dataSource]="chartData"
+              xName="month"
+              yName="sales"
+              name="Sales"
+              [marker]="makerSetting"
+            ></e-series>
+          </e-series-collection>
+        </ejs-chart>
+      </th>
+      <th scope="col">
+        <app-piechart></app-piechart>
+      </th>
+    </tr>
+  </thead>
+</table>
